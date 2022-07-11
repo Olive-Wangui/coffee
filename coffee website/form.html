@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+     <!-- custom css file link  -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      
+    <!-- header section starts  -->
+
+    <header class="header">
+        
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="blogs.html">Blogs</a>
+        </nav>
+
+    </header>
+
+    <!-- header section ends-->
+
+    <!-- form section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Payment</span> Form </h1>
+
+        <div class="row">
+            
+            <form action="">
+                <h3>Pay</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <fieldset style="color: white;">
+                        <p>
+                            male <input type="radio" name="gender" id="male" required> female <input type="radio" name="gender" id="female" required>
+                        </p>
+                
+                        </fieldset>
+                        
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="pin">
+                </div>
+                <div class="inputBox">
+                    <select name="card_type" id="card_type" required>
+                        <option value="">--Select your card--</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Visa">Visa</option>
+        
+        
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <input type="number" name="card_number" placeholder="card-number" id="card_number" required>
+                </div>
+                <input type="submit" value="Pay" class="btn">
+                <input type="reset" value="clear-form" class="btn"> 
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--form section ends-->
+</body>
+</html>
